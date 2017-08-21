@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; //need scanner to read user input
 
 public class age 
 {
@@ -6,9 +6,9 @@ public class age
 	//ask the user their age, and then tell them if they're young or old
 	public static void main(String[] args)
 	{
-		Scanner cin = new Scanner(System.in);
+		Scanner cin = new Scanner(System.in); //initialize scanner---cin is a standard name for reading from the terminal
 		
-		int age = cin.nextInt();
+		int age = cin.nextInt(); //read in the next int from the terminal
 		
 		if(age<0)
 		{
@@ -31,6 +31,6 @@ public class age
 			System.out.println("Middle of the road");
 		}
 		
-		cin.close();
+		cin.close(); //be sure to close the scanner when you are finished using it
 	}
 }
