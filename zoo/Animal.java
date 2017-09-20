@@ -5,11 +5,15 @@ public class Animal
 	String species;
 	String color;
 	
+	static int animalCount = 0;
+	
 	public Animal(String n, String s, String c)
 	{
 		name=n;
 		species=s;
 		color=c;
+		
+		animalCount++;
 	}
 	
 	public String getName()
@@ -25,6 +29,11 @@ public class Animal
 	public String getColor()
 	{
 		return color;
+	}
+	
+	public int animalCount()
+	{
+		return animalCount;
 	}
 	
 	
